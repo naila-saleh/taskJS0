@@ -1,4 +1,12 @@
-.nn{
-    background-color: purple;
-    color: white;
+.increaseFont h2{
+    font-size: 30px;
+}
+.increaseFont p{
+    font-size: 20px;
+}
+.decreaseFont h2{
+    font-size: 24px;
+}
+.decreaseFont p{
+    font-size: 16px;
 }
