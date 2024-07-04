@@ -1,21 +1,15 @@
-var exchangeForm=document.querySelector(".exchangeForm");
-var exchanges={};
-exchangeForm.onsubmit=function (e){
-    e.preventDefault();
-    var elements=e.target.elements;
-    exchanges={
-        amount:elements[0].value,
-        exchange:elements[1].value
-    }
-    printPriceExchange();
+async function getRecipes(){
+    const response = await fetch(`https://forkify-api.herokuapp.com/api/search?q=pizza`);
+    const data = await response.json();
+    const recipe = data.recipes;
+    const result = recipe.map(function (ele){
+        return `
+            <div>
+                <h2>${ele.title}</h2>
+                <img src="${ele.image_url}"/>
+            </div>
+        `;
+    }).join('');
+    document.querySelector(".pizza").innerHTML+=result;
 }
-function printPriceExchange(){
-    var data=``;
-    var afterExchange=exchanges.amount;
-    if(exchanges.exchange==="dollar")afterExchange=exchanges.amount*3.5;
-    else if(exchanges.exchange==="dinar")afterExchange=exchanges.amount*5;
-    data+=`
-            <p class="result">The result after exchange : ${afterExchange}</p>
-    `
-    document.querySelector(".result").innerHTML=data;
-}
+getRecipes();
