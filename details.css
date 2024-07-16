@@ -1,0 +1,25 @@
+body{
+    background-color: #ddd;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 80px;
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.details .product, .details .productImgs{
+    width: calc(50% - 20px);
+}
+.details .productImgs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.details .productImgs img{
+    width: 250px;
+}
