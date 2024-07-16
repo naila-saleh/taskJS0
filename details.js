@@ -8,7 +8,9 @@ const displayProduct =async ()=>{
     const data = await getProduct();
     const imgs = data.images.map((img)=>{
         return `
-            <img src="${img}" width="400px"/>
+            <div class="imag">
+                <img src="${img}" width="400px"/>
+            </div>
         `;
     }).join('');
     const result = `

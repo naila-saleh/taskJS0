@@ -20,6 +20,14 @@ body{
     flex-wrap: wrap;
     gap: 10px;
 }
+.details .productImgs .imag{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: calc((100% - 10px) / 2);
+}
 .details .productImgs img{
-    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
