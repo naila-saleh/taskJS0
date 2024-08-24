@@ -6,20 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="details.css">
 </head>
 <body>
-    <div class="overlay">
-        <div class="loader"></div>
-    </div>
-    <div class="products">
-        <div class="details">
-            <div class="product"></div>
-            <div class="productImgs"></div>
-        </div>
-        <div class="productReviews"></div>
-    </div>
+    <form>
+        <label>title</label>
+        <input type="text" name="title"/>
+        <label>price</label>
+        <input type="number" name="price"/>
+        <input type="submit" value="new product"/>
+    </form>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./details.js"></script>
+    <script src="./add.js"></script>
 </body>
 </html>

@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="products">
+    <div class="overlay">
+        <div class="loader"></div>
+    </div>
+    <nav>
+        <a href="index.html">home</a>
+        <a href="./add.html">new product</a>
+        <a href="#">contact</a>
+    </nav>
+    <main>
+        <section class="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto esse et laborum, quasi quo sed. Debitis distinctio eum facilis iusto, nam non obcaecati sequi velit vero voluptate. Animi beatae nam unde! Ab autem eveniet, incidunt natus repudiandae sit velit! Animi hic sunt velit. Ab aspernatur corporis culpa explicabo inventore nihil non sapiente ullam ut. Dignissimos, officia voluptatem. Aliquam beatae consequuntur dicta error facere ipsa libero nostrum unde. Nulla pariatur quas voluptate? Assumenda debitis dicta excepturi maiores, nemo omnis repudiandae tempora ut. Autem, consequuntur, quo? Accusamus autem, dolore expedita odit sit sunt voluptas. Accusantium aperiam assumenda aut consectetur consequuntur delectus, dignissimos distinctio dolor doloribus ea enim error et eum expedita explicabo facilis mollitia nisi nobis nostrum obcaecati officia perspiciatis quos rem sint sit soluta suscipit voluptatum. Eveniet fuga ipsam nemo quaerat sapiente! Ab, architecto aspernatur dolorum enim error, fugiat impedit itaque libero maxime nihil numquam omnis placeat porro quam quos sed, velit vero. Ab amet eum explicabo id impedit laboriosam, libero maiores natus necessitatibus neque officia qui quibusdam quidem ratione sed soluta temporibus unde veniam voluptatem voluptatum. Aliquid amet animi dignissimos est laborum neque numquam praesentium quo quod reprehenderit. Dolor laboriosam numquam veritatis. Aut distinctio ducimus eius in libero modi molestiae, nesciunt, nobis odio, odit quia quidem velit voluptas. Inventore, labore perspiciatis. Asperiores atque, cum exercitationem illum, in laborum maiores natus non quisquam reprehenderit sint unde voluptatem voluptates. Fugit, quisquam ullam! Explicabo fugit magni nisi! Adipisci, amet animi at beatae blanditiis deleniti distinctio dolore eaque eveniet excepturi exercitationem illo, in inventore, itaque iure quae quam quibusdam quidem saepe sapiente temporibus tenetur ullam veniam veritatis voluptates. Debitis perspiciatis sed tempore veritatis! Adipisci architecto at atque consequatur consequuntur dicta dolore dolores ducimus eaque eos ex harum incidunt itaque magnam maxime minima mollitia necessitatibus, nisi nobis nulla odio odit placeat quas temporibus tenetur vero voluptate voluptatibus. Accusantium alias aperiam consectetur culpa cumque, dolorum earum eum excepturi, facere, inventore ipsa numquam repellendus saepe sunt tempore! Accusamus alias beatae blanditiis consectetur culpa cumque deleniti dignissimos ea earum eligendi ex illum ipsum iure labore laboriosam laudantium minima molestiae molestias non officiis porro quae quibusdam, quidem quisquam rem repellendus reprehenderit sed sequi suscipit tenetur totam velit veritatis voluptatibus? At consequatur dolore enim fuga laborum, numquam sit. Aliquam cupiditate dicta facere fugiat harum ipsa, ipsam minus numquam odit, praesentium quos rem repudiandae similique sint soluta ut vel vitae voluptates! Dolorem fuga neque nesciunt nihil obcaecati quidem rerum totam voluptas.</p>
+        </section>
+        <section class="products-section">
+            <div class="products">
+            </div>
+            <div class="pagination-container">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <div class="modal d-none">
+        <div class="img">
+            <i class="fa-solid fa-xmark closeBtn"></i>
+            <i class="fa-solid fa-angle-left leftBtn"></i>
+            <img src="./../landing/assets/img/sectionsImgs/designGraphics.jpg"/>
+            <i class="fa-solid fa-angle-right rightBtn"></i>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./main.js"></script>

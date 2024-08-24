@@ -1,10 +1,5 @@
-body{
-    background-color: #ddd;
-}
-.d-none{
-    display: none !important;
-}
-.overlay {
+<style>
+    .overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -30,33 +25,8 @@ body{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-.products{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 80px;
-}
-.details{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.details .product, .details .productImgs{
-    width: calc(50% - 20px);
-}
-.details .productImgs{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.details .productImgs .imag{
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    width: calc((100% - 10px) / 2);
-}
-.details .productImgs img{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
+</style>
+
+<div class="overlay">
+    <div class="loader"></div>
+</div>

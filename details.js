@@ -44,5 +44,6 @@ const displayProduct =async ()=>{
     document.querySelector('.product').innerHTML=result;
     document.querySelector('.productImgs').innerHTML=imgs;
     document.querySelector('.productReviews').innerHTML=reviews;
+    document.querySelector('.overlay').classList.add('d-none');
 }
 displayProduct();
